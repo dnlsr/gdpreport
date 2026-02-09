@@ -11,6 +11,5 @@ def test_cli_calls_functions():
                 
                 main()
                 
-                # Проверяем что функции вызвались
                 mock_read.assert_called_once_with(['test.csv'])
                 mock_report.assert_called_once()
